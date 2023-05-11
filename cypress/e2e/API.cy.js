@@ -16,7 +16,6 @@ describe("Блок апі тестів", () => {
     })
 })
 
-
 const request1 = {
     method: 'POST',
     url: 'https://www.adoptapet.com/public/apis/pet_list.html',
