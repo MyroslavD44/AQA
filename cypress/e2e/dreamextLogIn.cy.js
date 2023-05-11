@@ -11,7 +11,7 @@ describe("Log in", () => {
         cy.get('[data-cy="login-btn"]').click();
 
         cy.get('[data-cy="settings-title"]').should("have.text", "Налаштування")
-        cy.get('.lazy').click();
+        cy.get('.lazy').click(); 
 
 
     })
