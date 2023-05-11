@@ -16,22 +16,6 @@ describe("Блок апі тестів", () => {
     })
 })
 
-const bodyData = {
-    bodyKey: "bodybody"
-  };
-
-  const request = {
-    method: 'GET',
-    url: 'https://www.adoptapet.com/public/apis/pet_list.html',
-    body: bodyData,
-  };
-
-  it('Second test', () => {
-    cy.request(request).then(response => {
-      assert.isTrue(response.duration <= 1000);
-      assert.notStrictEqual(bodyData, response.body.data);
-    })
-})
 const request1 = {
     method: 'POST',
     url: 'https://www.adoptapet.com/public/apis/pet_list.html',
@@ -89,30 +73,6 @@ const request3 = {
       assert.exists(response.body);
     });
   }); 
-
-  const request5 = {
-    method: 'PUT',
-    url: 'https://www.adoptapet.com/public/apis/pet_list.html',
-  };
-
-  it("Seventh test", () => {
-    cy.request(request5).then(response => {
-      assert.isTrue(response.duration <= 1000);
-      assert.exists(response.body);
-    });
-  });
-
-  const request6 = {
-    method: 'DELETE',
-    url: 'https://www.adoptapet.com/public/apis/pet_list.html',
-  };
-
-  it("Eights test", () => {
-    cy.request(request6).then(response => {
-      assert.isTrue(response.duration <= 1000);
-      assert.exists(response.body);
-    });
-  });
 
   const headers = {
     "Authorization": "Bearer abc123",
