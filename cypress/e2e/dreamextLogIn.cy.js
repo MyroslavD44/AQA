@@ -14,5 +14,7 @@ describe("Log in", () => {
         cy.get('.lazy').click(); 
 
 
+   
+   
     })
 })
