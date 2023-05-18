@@ -12,13 +12,15 @@ describe("Log in", () => {
         .type("Пришко")
 
         cy.get('.find-filter__button > .button')
-        .click() // Prushko
+        .click() // Pryshko
 
         cy.get('[data-id="6"] > .expert-preview__hide > .expert-preview__hide-footer > .button_medium')
         .click()
 
         cy.get('[data-title="Консультація для Пацієнтів"] > .btn-wrap > .button_regular')
         .click()
+
+        cy.get('.lang__now').wait(10000).invoke('mouseover');
 
 
 

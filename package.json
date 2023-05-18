@@ -6,12 +6,12 @@
   "scripts": {
     "test": "cypress run"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.11.0"
+    "cypress": "^12.11.0",
+    "cypress-plugin-snapshots": "^1.4.4"
   },
   "cypress": {
     "baseUrl": "https://moniheal.com",
